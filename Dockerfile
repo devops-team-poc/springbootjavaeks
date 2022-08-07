@@ -1,6 +1,6 @@
 FROM openjdk:8-alpine
 
-EXPOSE 8080
+EXPOSE 80
 
 ADD target/docker-demo.jar docker-demo.jar
 
