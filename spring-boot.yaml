@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: spring-boot-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: spring-boot-app
@@ -17,7 +17,7 @@ spec:
         image: 172499763739.dkr.ecr.ap-south-1.amazonaws.com/java-poc:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 # service type loadbalancers
 ---
 apiVersion: v1
@@ -29,6 +29,6 @@ spec:
     app: spring-boot-app
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 80
+      targetPort: 80
   type: LoadBalancer
