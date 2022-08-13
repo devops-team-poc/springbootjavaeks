@@ -17,7 +17,7 @@ spec:
         image: 172499763739.dkr.ecr.ap-south-1.amazonaws.com/java-poc:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 8010
 # service type loadbalancers
 ---
 apiVersion: v1
@@ -29,6 +29,6 @@ spec:
     app: spring-boot-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: 8010
+      targetPort: 8010
   type: LoadBalancer
