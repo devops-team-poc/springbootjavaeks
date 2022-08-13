@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class WelcomeController {
  @GetMapping("/welcome")
 	public String welcome() {
-	 return "Hurray!!! you successfully deploy a sample java application";
+	 return "Hurray!! you successfully deploy a sample java application";
  }
 }
