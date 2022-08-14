@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: spring-boot-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: spring-boot-app
@@ -13,8 +13,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: 172499763739.dkr.ecr.ap-south-1.amazonaws.com/java-poc:latest  template:
-
+        image: 172499763739.dkr.ecr.ap-south-1.amazonaws.com/java-poc:latest 
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
