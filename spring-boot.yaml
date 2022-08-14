@@ -7,6 +7,7 @@ spec:
   selector:
     matchLabels:
       app: spring-boot-app
+  template:
     metadata:
       labels:
         app: spring-boot-app
