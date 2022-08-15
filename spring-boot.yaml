@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: spring-boot-app
-      image: 172499763739.dkr.ecr.ap-south-1.amazonaws.com/java-poc:latest:tagversion
+      image: 172499763739.dkr.ecr.ap-south-1.amazonaws.com/java-poc:latest
       ports:
         - containerPort: 8080
         # service type loadbalancers
