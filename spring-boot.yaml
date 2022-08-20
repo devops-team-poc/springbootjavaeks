@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: spring-boot-app
@@ -20,7 +20,7 @@ spec:
         - containerPort: 8080
 # service type loadbalancers
 ---
-apiVersion: v1
+apiVersion: v2
 kind: Service
 metadata:
   name: spring-boot-svc
